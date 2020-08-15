@@ -1,4 +1,4 @@
-### Repo for playing with kafka:
+### Repo for playing with kafka
 
 #### Installation:
 brew install kafka (it will install zookeeper as well)
@@ -13,3 +13,6 @@ brew install kafka (it will install zookeeper as well)
 
 3. create topic <br/>
 `kafka-topics --create --topic testTopic -zookeeper localhost:2181 --reeplication-factor 1 --partitions 1`
+
+4. sample consumer <br/>
+`kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic myTopic`
